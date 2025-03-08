@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'pages/landing_page.dart';
 import 'pages/login_page.dart';
 import 'pages/home_page.dart';
 import 'pages/profile_page.dart';
@@ -16,9 +17,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: '/',
+      initialRoute: '/landing', 
       routes: {
-        '/': (context) => LoginPage(),
+        '/landing': (context) => LandingPage(), 
+        '/login': (context) => LoginPage(),
         '/home': (context) => HomePage(),
         '/profile': (context) => ProfilePage(),
       },
