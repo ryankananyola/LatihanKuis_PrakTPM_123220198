@@ -16,6 +16,12 @@ class _LoginPageState extends State<LoginPage> {
         'username': usernameController.text,
         'nickname': nicknameController.text,
       });
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Login Berhasil !'),
+          backgroundColor: const Color.fromARGB(255, 38, 164, 3),
+        ),
+      );
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
